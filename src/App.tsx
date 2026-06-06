@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Contact from "./Pages/Contact";
-import Services from "./Pages/Services";
-import AirFreight from "./Pages/AirFreight";
-import Freight from "./Pages/Freight";
-import LogisticsTransit from "./Pages/LogisticsTransit";
-import ClearingForwarding from "./Pages/ClearingForwarding";
+import Contact from "./pages/Contact";
+import Services from "./pages/Services";
+import AirFreight from "./pages/AirFreight";
+import Freight from "./pages/Freight";
+import LogisticsTransit from "./pages/LogisticsTransit";
+import ClearingForwarding from "./pages/ClearingForwarding";
 
 
 function App() {
