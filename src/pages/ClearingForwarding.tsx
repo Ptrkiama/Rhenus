@@ -33,13 +33,6 @@ Depending on cargo and route requirements, the scope of services can be extended
 
  
           </p>
-
-          {/* Back Button */}
-      <div style={{ padding: "20px 40px" }}>
-        <Link to="/" className="rh-btn-primary">
-         Back to Home
-        </Link>
-      </div>
         </div>
       </section>
     </>

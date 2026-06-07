@@ -32,13 +32,6 @@ Rhenus Group. Ltd is a company offering innovative sea freight clearing and forw
             <li>Cross-Border Transportation</li>
             <li>Cargo Insurance Assistance</li>
           </ul>
-
-           {/* Back Button */}
-      <div style={{ padding: "20px 40px" }}>
-        <Link to="/" className="rh-btn-primary">
-         Back to Home
-        </Link>
-      </div>
         </div>
       </section>
     </>

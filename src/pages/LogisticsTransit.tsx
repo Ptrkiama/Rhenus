@@ -34,13 +34,6 @@ When your Cargo spends a three week or Four on the ocean, you want a service pro
             <li>Cargo Tracking</li>
             <li>Supply Chain Coordination</li>
           </ul>
-
-             {/* Back Button */}
-      <div style={{ padding: "20px 40px" }}>
-        <Link to="/" className="rh-btn-primary">
-         Back to Home
-        </Link>
-      </div>
         </div>
       </section>
     </>

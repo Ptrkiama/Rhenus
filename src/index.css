@@ -403,15 +403,18 @@ html {
 ----------------------------------------- */
 .rh-stats {
   background: #003f7f;
-  padding: 50px 40px;
+  padding: 0 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  height: 60px;
+  align-items: center;
 }
 
 .rh-stat {
   text-align: center;
   border-right: 1px solid rgba(255,255,255,0.3);
-  padding: 8px 24px;
+  padding: 0 24px;
+  line-height: 1;
 }
 
 .rh-stat:last-child {
@@ -420,22 +423,22 @@ html {
 
 .rh-stat-num {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 72px;
+  font-size: 24px;
   font-weight: 700;
   color: white;
   line-height: 1;
 }
 
 .rh-stat-num span {
-  font-size: 22px;
+  font-size: 14px;
 }
 
 .rh-stat-label {
-  font-size: 18px;
+  font-size: 11px;
   color: white;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
-  margin-top: 6px;
+  letter-spacing: 1px;
+  margin-top: 2px;
 }
 
 /* -----------------------------------------

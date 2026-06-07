@@ -34,13 +34,6 @@ we are leading custom clearing Agents with updated customs regulations and proce
             <li>Cargo Inspection Coordination</li>
             <li>Freight Forwarding Services</li>
           </ul>
-
-          {/* Back Button */}
-      <div style={{ padding: "20px 40px" }}>
-        <Link to="/" className="rh-btn-primary">
-         Back to Home
-        </Link>
-      </div>
         </div>
       </section>
     </>

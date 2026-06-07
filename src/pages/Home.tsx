@@ -86,7 +86,7 @@ useEffect(() => {
         </div>
       </div>
 
-       {/* <div className="rh-stats">
+       {<div className="rh-stats">
         <div className="rh-stat">
         <div className="rh-stat-num">5</div>
           <div className="rh-stat-label">Branches</div>
@@ -99,8 +99,12 @@ useEffect(() => {
           <div className="rh-stat-num">5.5B<span>€</span></div>
           <div className="rh-stat-label">Annual revenue</div>
         </div>
+        <div className="rh-stat">
+          <div className="rh-stat-num">5.5B<span>€</span></div>
+          <div className="rh-stat-label">Annual revenue</div>
+        </div>
         
-      </div>*/}
+      </div>}
 
       <div className="rh-section">
   <div className="rh-section-tag">What We Do</div>
