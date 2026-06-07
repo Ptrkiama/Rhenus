@@ -4,6 +4,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  overflow-x: hidden;
+}
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.rh {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 .rh * {
   box-sizing: border-box;
   margin: 0;
@@ -1591,5 +1615,9 @@ html {
     height: 70px;
     font-size: 32px;
   }
+}
+html {
+  overflow-y: auto;
+  scrollbar-gutter: auto;
 }
 
