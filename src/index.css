@@ -36,7 +36,7 @@ html {
   position: sticky;
   top: 0;
   z-index: 1000;
-  height: 100px;
+  height: 90px;
   padding: 0 32px;
   display: flex;
   align-items: center;
@@ -65,7 +65,7 @@ html {
   flex-shrink: 0;
 }
 .rh-logo {
-  margin-left: -100px;
+  margin-left: -50px;
 }
 
 .rh-logo-mark {
@@ -85,7 +85,7 @@ html {
 }
 
 .rh-logo img {
-  height: 100px;
+  height: 90px;
   width: auto;
   display: block;
 }
