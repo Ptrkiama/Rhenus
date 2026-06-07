@@ -3,13 +3,6 @@ import { Link } from "react-router-dom";
 function Contact() {
   return (
     <>
-      {/* Back Button */}
-      <div style={{ padding: "20px 40px" }}>
-        <Link to="/" className="rh-btn-primary">
-          ← Back to Home
-        </Link>
-      </div>
-
       {/* Hero Banner */}
       <div className="contact-banner">
         <img

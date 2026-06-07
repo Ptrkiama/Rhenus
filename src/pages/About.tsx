@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
+
 function About() {
   return (
     <>
-    <Link to="/" className="rh-btn-primary">
-  ← Back to Home
-</Link>
       {/* Hero */}
       <section className="about-hero">
         <div className="about-overlay">
+          <div className="section-tag">About Us</div>
           <h1>About RHENUS GROUP. Ltd</h1>
           <p>
             Trusted logistics, clearing, forwarding, freight and transport
@@ -16,7 +15,7 @@ function About() {
         </div>
       </section>
 
-      {/* About Company */}
+      {/* Who We Are */}
       <section className="about-section">
         <div className="container">
           <div className="section-tag">Who We Are</div>
@@ -42,25 +41,21 @@ function About() {
 
       {/* Statistics */}
       <section className="about-stats">
-        <div className="stat-card">
-          <h3>5</h3>
-          <p>Branches</p>
-        </div>
-
-        <div className="stat-card">
-          <h3>20+</h3>
-          <p>Professional Staff</p>
-        </div>
-
-        <div className="stat-card">
-          <h3>210+</h3>
-          <p>Logistics Projects</p>
-        </div>
-
-        <div className="stat-card">
-          <h3>2005</h3>
-          <p>Founded</p>
-        </div>
+        {[
+          { num: "5", label: "Branches" },
+          { num: "20+", label: "Professional Staff" },
+          { num: "210+", label: "Logistics Projects" },
+          { num: "2005", label: "Founded" },
+        ].map((stat, i) => (
+          <div
+            key={i}
+            className="stat-card animate-in"
+            style={{ animationDelay: `${i * 0.1}s` }}
+          >
+            <h3>{stat.num}</h3>
+            <p>{stat.label}</p>
+          </div>
+        ))}
       </section>
 
       {/* Mission */}
@@ -74,7 +69,7 @@ function About() {
             To work closely with all sectors involved in logistics activities,
             including local and overseas clearing and forwarding agents,
             transport partners and stakeholders, ensuring cargo reaches our
-            clients safely and in the shortest possible time through sea, road
+            clients safely and in the shortest possible time through sea, road,
             and air freight services.
           </p>
         </div>
@@ -99,32 +94,26 @@ function About() {
       {/* Why Choose Us */}
       <section className="about-section">
         <div className="container">
-          <div className="section-tag">Why Choose Us</div>
+
+          <h2>What Sets Us Apart</h2>
 
           <div className="why-grid">
-            <div className="why-card">
-              Licensed Customs Agent
-            </div>
-
-            <div className="why-card">
-              Member of TAFFA & FIATA
-            </div>
-
-            <div className="why-card">
-              Experienced Logistics Team
-            </div>
-
-            <div className="why-card">
-              East & Central Africa Coverage
-            </div>
-
-            <div className="why-card">
-              Fast Cargo Clearance
-            </div>
-
-            <div className="why-card">
-              Reliable Freight Solutions
-            </div>
+            {[
+              "Licensed Customs Agent",
+              "Member of TAFFA & FIATA",
+              "Experienced Logistics Team",
+              "East & Central Africa Coverage",
+              "Fast Cargo Clearance",
+              "Reliable Freight Solutions",
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="why-card animate-in"
+                style={{ animationDelay: `${i * 0.08}s` }}
+              >
+                {item}
+              </div>
+            ))}
           </div>
         </div>
       </section>

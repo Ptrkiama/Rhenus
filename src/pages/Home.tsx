@@ -1,9 +1,8 @@
-// App.tsx
+// Home.tsx
 import { useState, useEffect } from "react";
-import React from 'react';
 import { Link } from "react-router-dom";
 
-function App() {
+function Home() {
   const slides = [
   {
     image: "/images/hero1.jpg",
@@ -33,26 +32,7 @@ useEffect(() => {
 }, []);
   return (
     <>
-      <nav className="rh-nav">
-        <div className="rh-logo">
-          <a href="/">
-            <img src="/images/rhenus-logo.png" alt="Rhenus Group" />
-          </a>
-        </div>
-        <div className="rh-nav-links">
-          <Link to="/">Home</Link>
-          <Link to="/about">About Us</Link>
-          <Link to="/services">Services</Link>
-          <a href="#">Gallery</a>
-        </div>
-        <div className="rh-nav-actions">
-          <Link to="/contact" className="rh-btn-primary">
-  Contact
-</Link>
-        </div>
-      </nav>
-
-   <div
+  <div
   className="rh-hero"
   style={{
     backgroundImage: `
@@ -123,42 +103,74 @@ useEffect(() => {
       </div>*/}
 
       <div className="rh-section">
-        <div className="rh-section-tag">What we do</div>
-        <div className="rh-section-title">End-to-end logistics services</div>
-        <p className="rh-section-sub">From air freight to port logistics, we deliver integrated solutions tailored to your industry's unique demands.</p>
-        <div className="rh-services">
-          <div className="rh-service-card">
-            <div className="rh-service-icon"><i className="ti ti-truck" aria-hidden="true"></i></div>
-            <div className="rh-service-title">Best Logistics</div>
-            <div className="rh-service-desc">We provide local transport to all regions in Tanzania and landlocked countries</div>
-          </div>
-          <div className="rh-service-card">
-            <div className="rh-service-icon"><i className="ti ti-ship" aria-hidden="true"></i></div>
-            <div className="rh-service-title">Sea Transport</div>
-            <div className="rh-service-desc">We offer innovative freight, clearing and forwarding solutions to cater to the diverse needs of our clients.</div>
-          </div>
-          <div className="rh-service-card">
-            <div className="rh-service-icon"><i className="ti ti-plane" aria-hidden="true"></i></div>
-            <div className="rh-service-title">Air freight</div>
-            <div className="rh-service-desc">Flexible full and part load road freight across Europe and beyond.</div>
-          </div>
-          <div className="rh-service-card">
-            <div className="rh-service-icon"><i className="ti ti-anchor" aria-hidden="true"></i></div>
-            <div className="rh-service-title">Port Logistics</div>
-            <div className="rh-service-desc">Comprehensive port and terminal services for bulk and general cargo.</div>
-          </div>
-          <div className="rh-service-card">
-            <div className="rh-service-icon"><i className="ti ti-clock" aria-hidden="true"></i></div>
-            <div className="rh-service-title">Fast Delivery</div>
-            <div className="rh-service-desc">We always cleared and delivery in a quickly, effeciently and timely manner without any delays.</div>
-          </div>
-          <div className="rh-service-card">
-            <div className="rh-service-icon"><i className="ti ti-phone" aria-hidden="true"></i></div>
-            <div className="rh-service-title">Support</div>
-            <div className="rh-service-desc">Rhenus Group. Ltd Team is ready to apply their passion for solutions in support of your business</div>
-          </div>
-        </div>
+  <div className="rh-section-tag">What We Do</div>
+  <div className="rh-section-title">End-to-End Logistics Services</div>
+  <p className="rh-section-sub">
+    From air freight to port logistics, we deliver integrated solutions tailored to your industry's unique demands.
+  </p>
+
+  <div className="rh-services">
+    <div className="rh-service-card">
+      <div className="rh-service-icon">
+        <i className="ti ti-truck" aria-hidden="true"></i>
       </div>
+      <div className="rh-service-title">Road Freight</div>
+      <div className="rh-service-desc">
+        Reliable transportation services across Tanzania and neighboring landlocked countries, ensuring safe and timely delivery.
+      </div>
+    </div>
+
+    <div className="rh-service-card">
+      <div className="rh-service-icon">
+        <i className="ti ti-ship" aria-hidden="true"></i>
+      </div>
+      <div className="rh-service-title">Sea Freight</div>
+      <div className="rh-service-desc">
+        Comprehensive ocean freight, clearing, and forwarding solutions for import and export cargo worldwide.
+      </div>
+    </div>
+
+    <div className="rh-service-card">
+      <div className="rh-service-icon">
+        <i className="ti ti-plane" aria-hidden="true"></i>
+      </div>
+      <div className="rh-service-title">Air Freight</div>
+      <div className="rh-service-desc">
+        Fast and secure air cargo services designed for time-sensitive shipments and global trade requirements.
+      </div>
+    </div>
+
+    <div className="rh-service-card">
+      <div className="rh-service-icon">
+        <i className="ti ti-anchor" aria-hidden="true"></i>
+      </div>
+      <div className="rh-service-title">Port Logistics</div>
+      <div className="rh-service-desc">
+        Efficient port handling, cargo management, and terminal operations for smooth supply chain movement.
+      </div>
+    </div>
+
+    <div className="rh-service-card">
+      <div className="rh-service-icon">
+        <i className="ti ti-clock" aria-hidden="true"></i>
+      </div>
+      <div className="rh-service-title">Fast Delivery</div>
+      <div className="rh-service-desc">
+        Quick, efficient, and dependable delivery services that keep your business moving without delays.
+      </div>
+    </div>
+
+    <div className="rh-service-card">
+      <div className="rh-service-icon">
+        <i className="ti ti-phone" aria-hidden="true"></i>
+      </div>
+      <div className="rh-service-title">24/7 Support</div>
+      <div className="rh-service-desc">
+        Our experienced team is always available to provide guidance, updates, and logistics solutions whenever you need them.
+      </div>
+    </div>
+  </div>
+</div>
 
       {/* Our Slogan */}
       <div className="rh-industries">
@@ -326,58 +338,8 @@ useEffect(() => {
           </div>
         </div>
       </div>
-
-      <div className="rh-cta">
-        <div className="rh-cta-title"> Delivering Excellence Across Every Mile</div>
-        <p className="rh-cta-sub">Whether by air, sea, or road, we provide reliable logistics solutions
-    designed to move your cargo safely and on time.</p>
-        <Link
-  to="/contact"
-  className="rh-btn-white"
-  style={{ fontSize: "15px", padding: "14px 36px" }}
->
-  Contact our team
-</Link>
-      </div>
-
-      <footer className="rh-footer">
-        <div className="rh-footer-grid">
-          <div className="rh-footer-brand">
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <div style={{ width: '32px', height: '32px', background: '#003f7f', borderRadius: '3px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
-                  <path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" />
-                </svg>
-              </div>
-              <span style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: '20px', fontWeight: 700, color: 'white', letterSpacing: '1px' }}>RHENUS GROUP</span>
-            </div>
-            <p>Specialist in: Customs Agent, Freight and Logistics.</p>
-          </div>
-          <div className="rh-footer-col">
-            <div className="rh-footer-col-title">Services</div>
-            <Link to="/services/air-freight">Clearing & Forwading</Link>
-            <Link to="/services/freight">Freight</Link>
-            <Link to="/services/logistics-transit">Logistics & Transit</Link>
-            <Link to="/services/clearing-forwarding">Project Logistics</Link>
-          </div>
-          <div className="rh-footer-col">
-            <div className="rh-footer-col-title">Company</div>
-            <Link to="/about">About Rhenus</Link>
-            <a href="#">Careers</a>
-            <Link to="/contact">Contact</Link>
-          </div>
-        </div>
-        <div className="rh-footer-bottom">
-          <div className="rh-footer-copy">©2026 RHENUS GROUP. All rights reserved.</div>
-          <div className="rh-footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Imprint</a>
-            <a href="#">Cookie Settings</a>
-          </div>
-        </div>
-      </footer>
     </>
   );
 }
 
-export default App;
+export default Home;
