@@ -88,9 +88,6 @@ html {
   gap: 10px;
   flex-shrink: 0;
 }
-.rh-logo {
-  margin-left: -50px;
-}
 
 .rh-logo-mark {
   width: 36px;
