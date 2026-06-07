@@ -1199,10 +1199,30 @@ html {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
-  .rh-footer-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-  }
+ .rh-footer-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  gap: 40px;  /* was 100px – too large */
+}
+.rh-footer {
+  overflow-x: hidden;
+  width: 100%;
+}
+}
+/* Footer logo alignment */
+.rh-footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.rh-footer-logo span {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
 }
 
 /* Tablets & Mobile (max-width: 992px) */
