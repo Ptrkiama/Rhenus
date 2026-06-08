@@ -3,38 +3,76 @@ import { Link } from "react-router-dom";
 function LogisticsTransit() {
   return (
     <>
-      <section className="about-hero">
-        <div className="about-overlay">
+      {/* Hero */}
+      <section className="service-detail-hero">
+        <div className="service-detail-hero-content">
           <h1>Logistics & Transit</h1>
-          <p>End-to-end logistics and transit solutions across Africa.</p>
+          <p>End‑to‑end logistics, warehousing, and transit solutions across East and Central Africa.</p>
         </div>
       </section>
 
-      <section className="about-section">
+      {/* Content */}
+      <section className="service-content">
         <div className="container">
           <h2>Supply Chain & Transit Management</h2>
 
           <p>
-            Rhenus Group is one of the most preferred logistics services providers engaged in offering different types of customs clearance activities. safe offers value addes services beyond physical operations in the form of logistics consultancy.  
-
-Air Freight is an essential component to any logistics network. Across our worldwide partners network you can choose the service which best suits your needs.  Whether your shipments fly in the bellies of commercial planes or require specialist freighter aircraft to move them, AFTA can look for a tailor-made solutions for all your air freight.
-
- 
-
-Transit
-When your Cargo spends a three week or Four on the ocean, you want a service provider that has access to information and competitive rates. Your ultimate choice for shipping your valued shipments. Our ocean freight Team is available to meat the challanges and deadlines of your overseas shipping itinery. We can ship FCL (Full container load) or LCL (Less than container load) shipments anywhere in the world-door to door.
+            Rhenus Group. Ltd is one of the most preferred logistics service providers in 
+            Tanzania, engaged in offering comprehensive transit and logistics solutions. 
+            Beyond physical cargo movement, we provide value‑added services such as 
+            logistics consultancy, route optimization, and supply chain design to help 
+            our clients reduce costs and improve efficiency.
           </p>
 
-          <h3>Our Logistics Services</h3>
+          <p>
+            <strong>Transit Cargo Management</strong> – When your cargo spends days or weeks 
+            in transit across borders, you need a service provider with real‑time visibility 
+            and competitive rates. Our transit bond capabilities allow smooth movement of 
+            goods through Tanzania to landlocked countries (Rwanda, Burundi, Uganda, DRC, 
+            South Sudan, Zambia). We handle all documentation, customs procedures at 
+            entry/exit points, and coordination with multiple transport partners.
+          </p>
+
+          <p>
+            <strong>Warehousing & Distribution</strong> – We offer secure warehousing 
+            facilities with inventory management systems. Whether you need short‑term 
+            storage or long‑term distribution hubs, our network ensures your products 
+            are safe, organised, and ready for just‑in‑time delivery.
+          </p>
+
+          <p>
+            <strong>End‑to‑End Visibility</strong> – Our advanced cargo tracking systems 
+            provide real‑time updates on your shipments, from origin to final destination. 
+            This transparency allows you to plan production, manage inventory, and respond 
+            quickly to any delays or changes.
+          </p>
+
+          <h3>Our Logistics & Transit Services</h3>
           <ul>
-            <li>Transit Cargo Management</li>
-            <li>Warehousing Solutions</li>
-            <li>Inventory Management</li>
-            <li>Distribution Services</li>
-            <li>Cargo Tracking</li>
-            <li>Supply Chain Coordination</li>
+            <li>Transit Cargo Management (Bonded & Non‑Bonded)</li>
+            <li>Warehousing Solutions (Short & Long Term)</li>
+            <li>Inventory Management & Stock Control</li>
+            <li>Distribution Services (Last‑Mile Delivery)</li>
+            <li>Real‑Time Cargo Tracking</li>
+            <li>Supply Chain Coordination & Consultancy</li>
+            <li>Cross‑Border Documentation & Customs Support</li>
+            <li>Inter‑Modal Transit (Road/Rail/Sea)</li>
           </ul>
+
+          <p>
+            With strategic hubs in Tanga, Dar es Salaam, and key border points, we ensure 
+            seamless transit of goods throughout East Africa and Central Africa. Our 
+            experienced logistics team handles everything from import/export documentation 
+            to final delivery, allowing you to focus on your core business.
+          </p>
         </div>
+      </section>
+
+      {/* CTA */}
+      <section className="service-cta">
+        <h2>Optimise Your Supply Chain</h2>
+        <p>Partner with us for reliable logistics, warehousing, and transit solutions.</p>
+        <Link to="/contact" className="rh-btn-primary">Request a Consultation →</Link>
       </section>
     </>
   );

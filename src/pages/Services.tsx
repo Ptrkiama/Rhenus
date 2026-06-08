@@ -38,9 +38,7 @@ function Services() {
       <section className="services-hero">
         <div className="services-hero-content">
           <div className="section-tag">What We Offer</div>
-
           <h1>Our Services</h1>
-
           <p>
             Comprehensive logistics, freight, transit and customs
             clearing solutions designed to keep your business moving.
@@ -52,7 +50,6 @@ function Services() {
       <section className="services-intro">
         <div className="container">
           <h2>Professional Logistics Solutions</h2>
-
           <p>
             We provide reliable and efficient logistics services across
             Tanzania, East Africa and Central Africa. Our experienced team
@@ -63,20 +60,12 @@ function Services() {
 
       {/* Services Grid */}
       <section className="services-page">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className="service-page-card"
-          >
-            <div className="service-page-icon">
-              {service.icon}
-            </div>
-
+        {services.map((service) => (
+          <div key={service.title} className="service-page-card">
+            <div className="service-page-icon">{service.icon}</div>
             <h2>{service.title}</h2>
-
             <p>{service.description}</p>
-
-            <Link to={service.link} className="rh-btn-primary">
+            <Link to={service.link} className="rh-btn-primary" aria-label={`Learn more about ${service.title}`}>
               Learn More →
             </Link>
           </div>
@@ -86,13 +75,11 @@ function Services() {
       {/* CTA */}
       <section className="services-cta">
         <h2>Need Logistics Support?</h2>
-
         <p>
           Contact our team today for customized freight, transit and
           customs clearing solutions.
         </p>
-
-        <Link to="/contact" className="rh-btn-primary">
+        <Link to="/contact" className="rh-btn-primary" aria-label="Contact our support team">
           Contact Us
         </Link>
       </section>
