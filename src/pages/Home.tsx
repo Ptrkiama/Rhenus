@@ -11,7 +11,7 @@ function Home() {
     {
       image: "/images/hero1.jpg",
       title: "Transit Goods",
-      desc: "Rhenus Group. Ltd is one of the most preferred logistics services providers engaged in offering Transit services. Our Transit Bond enables us to facilitate smooth transactions.",
+      desc: "RHENUS GROUP LIMITED is one of the most preferred logistics services providers engaged in offering Transit services. Our Transit Bond enables us to facilitate smooth transactions.",
     },
     {
       image: "/images/container-ship.jpg",
